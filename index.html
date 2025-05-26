@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Portfólio</title>
+</head>
+
+<body>
+  <div class="particulas"></div>
+
+  <nav class="navegacao">
+    <ul class="menu">
+      <li>
+        <a href="#inicio" class="menu-link">Início</a>
+      </li>
+      <li>
+        <a href="#sobre" class="menu-link">Sobre</a>
+      </li>
+      <li>
+        <a href="#projetos" class="menu-link">Projetos</a>
+      </li>
+      <li>
+        <a href="#contato" class="menu-link">Contato</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main id="inicio" class="cabecalho">
+    <img src="./img/Imagem do WhatsApp de 2025-02-24 à(s) 23.17.35_39627b4c.jpg" alt="Foto de Matheus Felipe"
+      class="foto-perfil" />
+    <h1>Matheus Felipe</h1>
+    <p class="cabecalho-sub-titulo">Desenvolvedor Full-Stack</p>
+  </main>
+
+  <section id="sobre" class="sobre">
+    <h2 class="sobre-titulo">Sobre Mim</h2>
+    <div class="sobre-caixa">
+      <p class="sobre-paragrafo">
+        Sou Matheus Felipe, desenvolvedor full-stack em formação, cursando
+        Análise e Desenvolvimento de Sistemas. Tenho experiência prática em
+        desenvolvimento web, tanto no front-end quanto no back-end, utilizando
+        tecnologias como React, Next.js, Node.js, C# e ASP.NET, além de bancos
+        de dados como PostgreSQL e MongoDB. Também possuo conhecimento em
+        metodologias ágeis e gestão de projetos, que aplico no meu dia a dia
+        para manter organização, foco e eficiência no desenvolvimento.
+      </p>
+    </div>
+  </section>
+
+  <section id="projetos" class="projetos">
+    <h2 class="projetos-titulo">Meus Projetos</h2>
+    <div class="projetos-caixa">
+      <a href="https://calculadora-js-two-gamma.vercel.app/" target="_blank" rel="noopener noreferrer">
+        <div class="projetos-card">
+          <img src="./img/calculadora.png" alt="Projeto 1" class="projetos-imagem" />
+          <div class="caixa-texto-projeto">
+            <h3 class="info-projetos">Calculadora</h3>
+            <p>
+              Calculadora simples utilizando HTML, CSS e JavaScript. Usei o HTML
+              para estruturar os botões e a tela de exibição, e o CSS para dar
+              um visual limpo e responsivo
+            </p>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://conversor-de-temperatura-nine.vercel.app/" target="_blank" rel="noopener noreferrer">
+      <div class="projetos-card">
+        <img src="./img/conversor.png" alt="Projeto 2" class="projetos-imagem" />
+        <div class="caixa-texto-projeto">
+          <h3 class="info-projetos">Conversor</h3>
+          <p>
+            Conversor de temperaturas entre Celsius e Fahrenheit com HTML, CSS
+            e JavaScript. A interface é simples e responsiva, e o JavaScript
+            faz os cálculos automaticamente
+          </p>
+        </div>
+      </div>
+      </a>
+
+      <a href="https://gerador-de-senha-js-xi.vercel.app/" target="_blank" rel="noopener noreferrer">
+      <div class="projetos-card">
+        <img src="./img/geradordesenha.png" alt="Projeto 3" class="projetos-imagem" />
+        <div class="caixa-texto-projeto">
+          <h3 class="info-projetos">Gerador de senha</h3>
+          <p>
+            Gerador de senhas aleatórias, desenvolvido com HTML, CSS e
+            JavaScript. A interface é simples e intuitiva, proporcionando uma
+            experiência agradável.
+          </p>
+        </div>
+      </div>
+      </a>
+
+      <a href="https://cadastro-de-usuarios-one.vercel.app/" target="_blank" rel="noopener noreferrer">
+      <div class="projetos-card">
+        <img src="./img/cadastrodeusuario.png" alt="Projeto 4" class="projetos-imagem" />
+        <div class="caixa-texto-projeto">
+          <h3 class="info-projetos">Cadastro de usuários</h3>
+          <p>
+            Criei um sistema de cadastro de usuários usando React, Node.js,
+            JavaScript e HTML. O React gerencia a interface. O Node.js lida
+            com o backend.
+          </p>
+        </div>
+      </div>
+      </a>
+
+      <a href="https://productregisterapp.onrender.com/" target="_blank" rel="noopener noreferrer">
+      <div class="projetos-card">
+        <img src="./img/ProductControl.png" alt="Projeto 5" class="projetos-imagem" />
+        <div class="caixa-texto-projeto">
+          <h3 class="info-projetos">Controle de Produtos</h3>
+          <p>
+            Aplicação web para controle de produtos por loja, desenvolvida com
+            ASP.NET Core MVC, C#, Entity Framework Core, HTML, CSS e
+            JavaScript.
+          </p>
+        </div>
+      </div>
+      </a>
+
+      <a href="https://bookauthorapi.onrender.com" target="_blank" rel="noopener noreferrer">
+      <div class="projetos-card">
+        <img src="./img/BookAuthorAPI.png" alt="Projeto 6" class="projetos-imagem" />
+        <div class="caixa-texto-projeto">
+          <h3 class="info-projetos">API de Autor e Livros</h3>
+          <p>
+            API desenvolvida com C# e ASP.NET para cadastro de autores e
+            livros.
+          </p>
+        </div>
+      </div>
+      </a>
+    </div>
+  </section>
+
+  <section id="contato" class="contato">
+    <h2 class="contato-titulo">Entre em Contato</h2>
+    <form class="formulario-contato" id="formulario" onsubmit="enviaWhatsApp(event)">
+      <div class="grupo-form">
+        <input placeholder="Nome" class="campo-form" id="nome" />
+      </div>
+
+      <div class="grupo-form">
+        <textarea class="campo-form" placeholder="Digite sua Mensagem" rows="4" id="mensagem"></textarea>
+      </div>
+
+      <button type="submit" class="botao-form">Enviar WhatsApp</button>
+    </form>
+
+    
+    <div class="social-icons">
+  <a href="https://github.com/Matheus-FelipeSS" target="_blank">
+    <i class="fab fa-github"></i>
+  </a>
+  <a href="https://www.linkedin.com/in/matheus-felipe-84488026a" target="_blank">
+    <i class="fab fa-linkedin"></i>
+  </a>
+   <a href="mailto:matheusf.silveira@hotmail.com?subject=Contato%20do%20Portfólio&body=Olá,%20gostaria%20de%20falar%20com%20você%20sobre%20os%20seus%20serviços.">
+    <i class="fas fa-envelope"></i>
+  </a>
+</div>
+
+  </section>
+
+  <footer>
+    <p>Copyright &copy; 2025 by Matheus Felipe</p>
+  </footer>
+</body>
+<script src="./js/script.js"></script>
+
+</html>
